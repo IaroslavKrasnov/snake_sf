@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(243, 241, 215);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    border: 2px solid #000;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #9eb8d9;
+}
+
+.snake {
+    background-color: #739072;
+}
+
+.food {
+    background-color: #d60000;
+    border-radius: 50%;
+}
+
+h1 {
+    color: #470c30;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    display: none;
+    background-color: #014e3b;
+    color: #dfe5eb;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
